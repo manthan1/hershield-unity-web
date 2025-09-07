@@ -77,20 +77,21 @@ const Contact = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20">
+      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Ready to Join Our Community?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-primary-foreground/90 mb-8">
             Don't wait to be part of something meaningful. Connect with us today and discover how you can contribute to women's empowerment in our community.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              variant="cta" 
+              variant="secondary" 
               size="lg"
               onClick={() => window.open('/get-involved', '_self')}
+              className="bg-white text-primary hover:bg-white/90"
             >
               Get Involved Now
             </Button>
@@ -98,6 +99,7 @@ const Contact = () => {
               variant="outline" 
               size="lg"
               onClick={() => window.open('mailto:hersheildnetwork@gmail.com', '_blank')}
+              className="border-white text-white hover:bg-white hover:text-primary"
             >
               Subscribe to Updates
             </Button>
