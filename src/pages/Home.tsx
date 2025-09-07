@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Heart, Users, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-hands.jpg";
 import communityGallery from "@/assets/community-gallery.jpg";
 
 const Home = () => {
@@ -17,18 +17,30 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Elevating women through unity and support
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 tracking-wide">
+            HERSHIELD
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <h2 className="text-2xl md:text-3xl text-primary-foreground/90 mb-4 font-light">
+            Elevating women through unity and support
+          </h2>
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
             HerShield is a South Asian women-led initiative by Shafoli, built to empower women and give back through quarterly charity partnerships. Every four months, we stand behind a new cause, raising awareness and resources to help women build stronger futures.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => window.open('/get-involved', '_self')}
+            >
               Get Involved
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => window.open('/about', '_self')}
+            >
               Learn More
             </Button>
           </div>
@@ -74,7 +86,11 @@ const Home = () => {
                 <p className="text-muted-foreground mb-4">
                   Connect with like-minded women in an empowering networking environment designed for growth and collaboration.
                 </p>
-                <Button variant="cta" className="w-full">
+                <Button 
+                  variant="cta" 
+                  className="w-full"
+                  onClick={() => window.open('https://www.eventbrite.com/e/cohere-networking-tickets', '_blank')}
+                >
                   Book a Seat
                 </Button>
               </CardContent>
@@ -94,7 +110,11 @@ const Home = () => {
                 <p className="text-muted-foreground mb-4">
                   Develop leadership skills and confidence through interactive workshops led by successful women leaders.
                 </p>
-                <Button variant="cta" className="w-full">
+                <Button 
+                  variant="cta" 
+                  className="w-full"
+                  onClick={() => window.open('/get-involved', '_self')}
+                >
                   Reserve Spot
                 </Button>
               </CardContent>
@@ -114,7 +134,11 @@ const Home = () => {
                 <p className="text-muted-foreground mb-4">
                   Join our quarterly fundraising event supporting women's shelters and empowerment programs.
                 </p>
-                <Button variant="cta" className="w-full">
+                <Button 
+                  variant="cta" 
+                  className="w-full"
+                  onClick={() => window.open('/charity', '_self')}
+                >
                   Get Tickets
                 </Button>
               </CardContent>
@@ -138,11 +162,19 @@ const Home = () => {
                 This quarter, we're partnering with the Women's Emergency Shelter Network to provide safe housing and support services for women and children escaping domestic violence. Every donation goes directly to providing shelter, counseling, and job training programs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="lg">
+                <Button 
+                  variant="cta" 
+                  size="lg"
+                  onClick={() => window.open('https://donate.stripe.com/hershield-donation', '_blank')}
+                >
                   Donate Now
                   <Heart className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => window.open('/charity', '_self')}
+                >
                   Learn More
                 </Button>
               </div>
@@ -195,7 +227,11 @@ const Home = () => {
               <p className="text-primary-foreground/90 mb-4">
                 Over 500 women connected and empowered
               </p>
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.open('/get-involved', '_self')}
+              >
                 Be Part of the Movement
               </Button>
             </div>

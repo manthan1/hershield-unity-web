@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-light shadow-soft",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-soft",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        default: "bg-primary text-primary-foreground hover:bg-primary-light shadow-soft transition-smooth",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-smooth",
+        outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground transition-smooth",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-soft transition-smooth",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-smooth",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "gradient-hero text-primary-foreground hover:scale-105 shadow-medium font-semibold",
-        cta: "gradient-primary text-primary-foreground hover:shadow-strong hover:-translate-y-0.5 font-semibold",
+        hero: "bg-primary-foreground/20 text-primary-foreground border-2 border-primary-foreground/30 hover:bg-primary-foreground hover:text-primary transition-smooth backdrop-blur-sm font-semibold",
+        cta: "bg-primary text-primary-foreground font-semibold shadow-medium hover:bg-primary-light hover:shadow-strong hover:-translate-y-0.5 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

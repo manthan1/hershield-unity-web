@@ -1,10 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import ContactForm from "@/components/forms/ContactForm";
 
 const Contact = () => {
   const contactInfo = [
@@ -69,171 +66,13 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Contact Form */}
       <section className="py-20 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card className="shadow-strong">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <MessageSquare className="h-8 w-8 text-primary" />
-                  <h2 className="text-2xl font-bold text-foreground">Send Us a Message</h2>
-                </div>
-                
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="Your first name" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Your last name" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="your@email.com" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number (Optional)</Label>
-                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="What is your message about?" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Inquiry</SelectItem>
-                        <SelectItem value="volunteer">Volunteering Opportunities</SelectItem>
-                        <SelectItem value="partnership">Partnership/Sponsorship</SelectItem>
-                        <SelectItem value="events">Events & Workshops</SelectItem>
-                        <SelectItem value="charity">Charity Partnership</SelectItem>
-                        <SelectItem value="media">Media & Press</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Tell us how we can help you or share your thoughts about HerShield..."
-                      rows={5}
-                    />
-                  </div>
-
-                  <Button variant="cta" size="lg" className="w-full">
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
-            {/* Additional Information */}
-            <div className="space-y-8">
-              {/* FAQ Quick Links */}
-              <Card className="shadow-medium">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-6">Frequently Asked Questions</h3>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">How can I get involved with HerShield?</h4>
-                      <p className="text-sm text-muted-foreground">
-                        There are many ways! Check out our <a href="/get-involved" className="text-primary font-semibold hover:underline">Get Involved page</a> for volunteer opportunities, events, and partnerships.
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">How do you select charity partners?</h4>
-                      <p className="text-sm text-muted-foreground">
-                        We carefully research women-focused charities with proven track records. Learn more on our <a href="/charity" className="text-primary font-semibold hover:underline">Charity Spotlight page</a>.
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Can men participate in HerShield events?</h4>
-                      <p className="text-sm text-muted-foreground">
-                        While our focus is women's empowerment, we welcome allies who support our mission. Contact us to learn about inclusive events.
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Do you offer corporate partnerships?</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Yes! We work with organizations on sponsorships, employee engagement, and strategic partnerships. Contact us to discuss options.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Social Media */}
-              <Card className="shadow-medium">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-6">Connect With Us</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Follow us on social media for the latest updates, event announcements, and inspiring stories from our community.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4">
-                    {socialLinks.map((social, index) => (
-                      <Button
-                        key={index}
-                        variant="outline"
-                        asChild
-                        className="h-auto p-4 flex-col items-center gap-2"
-                      >
-                        <a
-                          href={social.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span className="font-semibold">{social.name}</span>
-                          <span className="text-xs text-muted-foreground">
-                            {social.followers} followers
-                          </span>
-                        </a>
-                      </Button>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Office Hours */}
-              <Card className="shadow-medium">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Clock className="h-6 w-6 text-primary" />
-                    <h3 className="text-xl font-bold text-foreground">Response Times</h3>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between">
-                      <span className="text-foreground">Email Inquiries:</span>
-                      <span className="text-muted-foreground">Within 24 hours</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground">Partnership Requests:</span>
-                      <span className="text-muted-foreground">Within 48 hours</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground">Event Registration:</span>
-                      <span className="text-muted-foreground">Within 12 hours</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-foreground">Urgent Matters:</span>
-                      <span className="text-muted-foreground">Same day</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactForm 
+            title="Send us a Message" 
+            type="contact"
+          />
         </div>
       </section>
 
@@ -248,10 +87,18 @@ const Contact = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
+            <Button 
+              variant="cta" 
+              size="lg"
+              onClick={() => window.open('/get-involved', '_self')}
+            >
               Get Involved Now
             </Button>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.open('mailto:hersheildnetwork@gmail.com', '_blank')}
+            >
               Subscribe to Updates
             </Button>
           </div>

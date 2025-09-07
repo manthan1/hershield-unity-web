@@ -1,10 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Users, Heart, Calendar, Handshake, Mail, Phone, ArrowRight } from "lucide-react";
+import { Users, Handshake, Heart, Calendar, ArrowRight, Mail, Phone } from "lucide-react";
+import ContactForm from "@/components/forms/ContactForm";
 
 const GetInvolved = () => {
   const ways = [
@@ -101,113 +98,36 @@ const GetInvolved = () => {
         </div>
       </section>
 
-      {/* Interest Form */}
+      {/* Contact Forms Section */}
       <section className="py-20 bg-accent">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Get Started Today
+              Ready to Get Started?
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Fill out our interest form and we'll connect with you about the best ways to get involved based on your interests and availability.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Choose how you'd like to get involved and we'll connect with you soon.
             </p>
           </div>
-
-          <Card className="shadow-strong">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="Your first name" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Your last name" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number (Optional)</Label>
-                  <Input id="phone" type="tel" placeholder="(555) 123-4567" />
-                </div>
-
-                <div className="space-y-3">
-                  <Label>How would you like to get involved? (Select all that apply)</Label>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="volunteer" />
-                      <Label htmlFor="volunteer" className="text-sm">Volunteer at events</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="organize" />
-                      <Label htmlFor="organize" className="text-sm">Help organize events</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="mentor" />
-                      <Label htmlFor="mentor" className="text-sm">Mentorship program</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="speaker" />
-                      <Label htmlFor="speaker" className="text-sm">Be a speaker/facilitator</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="fundraising" />
-                      <Label htmlFor="fundraising" className="text-sm">Fundraising initiatives</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="marketing" />
-                      <Label htmlFor="marketing" className="text-sm">Marketing & social media</Label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="experience">Relevant Experience or Skills</Label>
-                  <Textarea 
-                    id="experience" 
-                    placeholder="Tell us about any relevant experience, skills, or areas of expertise you'd like to contribute..."
-                    rows={3}
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="availability">Availability</Label>
-                  <Textarea 
-                    id="availability" 
-                    placeholder="What's your general availability? (e.g., weekends only, flexible evenings, specific days...)"
-                    rows={2}
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Additional Message (Optional)</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Anything else you'd like us to know about your interest in joining HerShield?"
-                    rows={3}
-                  />
-                </div>
-
-                <div className="flex items-center space-x-2">
-                  <Checkbox id="newsletter" defaultChecked />
-                  <Label htmlFor="newsletter" className="text-sm">
-                    I'd like to receive updates about HerShield events and initiatives
-                  </Label>
-                </div>
-
-                <Button variant="cta" size="lg" className="w-full">
-                  Submit Interest Form
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <ContactForm 
+              title="Volunteer with Us" 
+              type="volunteer"
+            />
+            <ContactForm 
+              title="Partner with HerShield" 
+              type="partner"
+            />
+            <ContactForm 
+              title="Join Our Community" 
+              type="community"
+            />
+            <ContactForm 
+              title="Event Interest Form" 
+              type="event"
+            />
+          </div>
         </div>
       </section>
 
