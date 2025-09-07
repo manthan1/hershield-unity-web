@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="py-20 gradient-hero">
+      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
             Contact HerShield
@@ -53,7 +53,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <Card key={index} className="shadow-medium text-center">
                 <CardContent className="p-8">
-                  <div className="gradient-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{background: 'linear-gradient(135deg, #7d2d4a, #9d3b5b)'}}>
                     <info.icon className="h-8 w-8 text-secondary-foreground" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{info.title}</h3>
@@ -67,7 +67,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-accent">
+      <section className="py-20" style={{backgroundColor: '#c2a898'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm 
             title="Send us a Message" 
