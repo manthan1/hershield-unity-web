@@ -67,7 +67,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20" style={{backgroundColor: '#c2a898'}}>
+      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm 
             title="Send us a Message" 
