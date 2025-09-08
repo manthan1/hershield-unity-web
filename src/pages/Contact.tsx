@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
+      <section className="py-20" style={{backgroundColor: '#792836'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
             Contact HerShield
@@ -67,7 +67,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
+      <section className="py-20" style={{backgroundColor: '#c2aa9b'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm 
             title="Send us a Message" 
@@ -77,7 +77,7 @@ const Contact = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20" style={{background: 'linear-gradient(135deg, #7d2d4a 0%, #9d3b5b 50%, #b8506f 100%)'}}>
+      <section className="py-20" style={{backgroundColor: '#792836'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Ready to Join Our Community?
