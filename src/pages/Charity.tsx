@@ -72,7 +72,7 @@ const Charity = () => {
             <Badge className="mb-4 gradient-secondary text-secondary-foreground px-4 py-2">
               Current Quarter - Q2 2024
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Women's Emergency Shelter Network
             </h2>
           </div>
@@ -80,7 +80,7 @@ const Charity = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <Card className="shadow-strong lg:col-span-2">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-4">About Our Current Partner</h3>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>About Our Current Partner</h3>
                 <p className="text-lg text-muted-foreground mb-6">
                   The Women's Emergency Shelter Network operates 12 shelters across the region, providing safe housing, counseling services, and job training programs for women and children escaping domestic violence. They've helped over 2,000 families find safety and rebuild their lives.
                 </p>

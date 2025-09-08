@@ -63,7 +63,7 @@ const Home = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Upcoming Events
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ const Home = () => {
                     <Calendar className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">CoHere Networking</h3>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>CoHere Networking</h3>
                     <p className="text-sm text-muted-foreground">March 15, 2024</p>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const Home = () => {
                     <Users className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">Leadership Workshop</h3>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Leadership Workshop</h3>
                     <p className="text-sm text-muted-foreground">April 8, 2024</p>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const Home = () => {
                     <Heart className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg">Community Fundraiser</h3>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Community Fundraiser</h3>
                     <p className="text-sm text-muted-foreground">May 20, 2024</p>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ const Home = () => {
                   <div className="gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="h-8 w-8 text-primary-foreground" />
                   </div>
-                  <h4 className="text-2xl font-bold text-foreground mb-2">100% Transparency</h4>
+                  <h4 className="text-2xl font-bold mb-2" style={{ color: 'hsl(var(--crimson))' }}>100% Transparency</h4>
                   <p className="text-muted-foreground mb-4">
                     Every dollar donated goes directly to our partner charity. We cover all administrative costs separately.
                   </p>
@@ -205,7 +205,7 @@ const Home = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Our Community in Action
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

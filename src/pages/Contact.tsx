@@ -56,7 +56,7 @@ const Contact = () => {
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{background: 'linear-gradient(135deg, #7d2d4a, #9d3b5b)'}}>
                     <info.icon className="h-8 w-8 text-secondary-foreground" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{info.title}</h3>
+                  <h3 className="text-xl font-bold mb-2" style={{ color: 'hsl(var(--crimson))' }}>{info.title}</h3>
                   <p className="text-lg font-semibold text-primary mb-2">{info.value}</p>
                   <p className="text-sm text-muted-foreground">{info.description}</p>
                 </CardContent>
@@ -79,7 +79,7 @@ const Contact = () => {
       {/* Call to Action */}
       <section className="py-20" style={{backgroundColor: '#792836'}}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: 'hsl(var(--light-orange))' }}>
             Ready to Join Our Community?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8">

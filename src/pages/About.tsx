@@ -68,9 +68,9 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Who We Are
-              </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: 'hsl(var(--crimson))' }}>
+            Who We Are
+          </h2>
               <p className="text-lg text-muted-foreground mb-6">
                 HerShield is more than an organization – we're a movement of women committed to lifting each other up. Founded by South Asian women who understand the unique challenges of building new lives, we create spaces where every woman can find her voice and her power.
               </p>
@@ -81,7 +81,7 @@ const About = () => {
             <div className="gradient-primary p-8 rounded-2xl shadow-strong">
               <div className="text-center text-primary-foreground">
                 <Globe className="h-16 w-16 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Our Impact</h3>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: 'hsl(var(--light-orange))' }}>Our Impact</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
                     <div className="text-3xl font-bold">500+</div>
@@ -112,7 +112,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <Card className="shadow-strong">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
+                <h2 className="text-2xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>Our Mission</h2>
                 <p className="text-lg text-muted-foreground">
                   To empower women to create independent, fulfilling lives by supporting each other and uplifting causes that directly impact their communities. We provide resources, opportunities, and a sisterhood that helps every woman thrive.
                 </p>
@@ -121,7 +121,7 @@ const About = () => {
 
             <Card className="shadow-strong">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">Our Vision</h2>
+                <h2 className="text-2xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>Our Vision</h2>
                 <p className="text-lg text-muted-foreground">
                   A world where every woman, regardless of her background, has the resources, opportunities, and community to succeed. Where sisterhood transcends boundaries and every woman knows she is not alone.
                 </p>
@@ -135,7 +135,7 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Our Core Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -150,7 +150,7 @@ const About = () => {
                   <div className="gradient-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <value.icon className="h-8 w-8 text-secondary-foreground" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-semibold mb-3" style={{ color: 'hsl(var(--crimson))' }}>
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground">
@@ -181,7 +181,7 @@ const About = () => {
         <div className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--light-orange))' }}>
               Our Focus Areas
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -193,7 +193,7 @@ const About = () => {
             {focus.map((item, index) => (
               <Card key={index} className="shadow-medium hover:shadow-strong transition-smooth">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-semibold mb-3" style={{ color: 'hsl(var(--light-orange))' }}>
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground text-lg">
@@ -211,7 +211,7 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Our Team
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -225,7 +225,7 @@ const About = () => {
                 <div className="gradient-primary w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-3xl font-bold text-primary-foreground">S</span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Shafoli Kapur</h3>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: 'hsl(var(--crimson))' }}>Shafoli Kapur</h3>
                 <p className="text-lg text-primary font-semibold mb-4">Founder & Executive Director</p>
                 <p className="text-muted-foreground text-lg">
                   South Asian immigrant, community leader, and passionate advocate for women's empowerment. Shafoli founded HerShield to create the supportive community she wished she had during her own journey.
@@ -240,7 +240,7 @@ const About = () => {
               <Card className="shadow-medium max-w-md mx-auto">
                 <CardContent className="p-6 text-center">
                   <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <h4 className="text-lg font-semibold mb-2">Join Our Team</h4>
+                  <h4 className="text-lg font-semibold mb-2" style={{ color: 'hsl(var(--crimson))' }}>Join Our Team</h4>
                   <p className="text-muted-foreground mb-4">
                     Interested in volunteering or becoming an advisor?
                   </p>
