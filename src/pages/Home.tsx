@@ -11,7 +11,7 @@ const Home = () => {
       <section className="relative min-h-[90vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url('/lovable-uploads/5bb117a7-9552-418c-a2af-8f07a55ddd00.png')` }}
         >
           <div className="absolute inset-0 gradient-hero opacity-80"></div>
         </div>
@@ -48,12 +48,12 @@ const Home = () => {
       </section>
 
       {/* Founder's Quote */}
-      <section className="py-20 bg-accent">
+      <section className="py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="text-2xl md:text-3xl font-medium text-foreground italic mb-6">
+          <blockquote className="text-2xl md:text-3xl font-medium italic mb-6" style={{ color: 'hsl(var(--crimson))' }}>
             "HerShield is my promise to every woman: you are not alone. Together, we are stronger, braver, and unstoppable."
           </blockquote>
-          <cite className="text-lg text-muted-foreground font-semibold">
+          <cite className="text-lg font-semibold" style={{ color: 'hsl(var(--gray-brown))' }}>
             — Shafoli Kapur, Founder
           </cite>
         </div>
@@ -148,17 +148,17 @@ const Home = () => {
       </section>
 
       {/* Featured Cause */}
-      <section className="py-20 bg-primary-lighter">
+      <section className="py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: 'hsl(var(--crimson))' }}>
                 Featured Cause of the Quarter
               </h2>
-              <h3 className="text-xl font-semibold text-primary mb-4">
+              <h3 className="text-xl font-semibold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
                 Women's Emergency Shelter Network
               </h3>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg mb-6" style={{ color: 'hsl(var(--gray-brown))' }}>
                 This quarter, we're partnering with the Women's Emergency Shelter Network to provide safe housing and support services for women and children escaping domestic violence. Every donation goes directly to providing shelter, counseling, and job training programs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

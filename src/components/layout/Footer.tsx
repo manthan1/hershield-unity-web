@@ -26,29 +26,33 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-primary-foreground/20 w-10 h-10 rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">H</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'hsl(var(--crimson))' }}>
+                <span className="font-bold text-xl" style={{ color: 'hsl(var(--light-orange))' }}>H</span>
               </div>
-              <span className="font-bold text-xl">HerShield</span>
+              <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span>
             </div>
-            <p className="text-primary-foreground/80 mb-4 max-w-md">
+            <p className="mb-4 max-w-md" style={{ color: 'hsl(var(--gray-brown))' }}>
               Elevating women through unity and support. A South Asian women-led initiative empowering women and giving back through quarterly charity partnerships.
             </p>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map((social) => (
-                <Button
-                  key={social.name}
-                  variant="outline"
-                  size="sm"
-                  asChild
-                  className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                >
+                  <Button
+                    key={social.name}
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="border-gray-brown/20 hover:bg-gray-brown hover:text-light-orange"
+                    style={{ 
+                      color: 'hsl(var(--gray-brown))', 
+                      borderColor: 'hsl(var(--gray-brown) / 0.3)'
+                    }}
+                  >
                   <a
                     href={social.url}
                     target="_blank"
@@ -65,25 +69,41 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4" style={{ color: 'hsl(var(--crimson))' }}>Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <Link 
+                  to="/about" 
+                  className="transition-smooth hover:opacity-80"
+                  style={{ color: 'hsl(var(--gray-brown))' }}
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/founder" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <Link 
+                  to="/founder" 
+                  className="transition-smooth hover:opacity-80"
+                  style={{ color: 'hsl(var(--gray-brown))' }}
+                >
                   Founder's Story
                 </Link>
               </li>
               <li>
-                <Link to="/charity" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <Link 
+                  to="/charity" 
+                  className="transition-smooth hover:opacity-80"
+                  style={{ color: 'hsl(var(--gray-brown))' }}
+                >
                   Charity Spotlight
                 </Link>
               </li>
               <li>
-                <Link to="/get-involved" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <Link 
+                  to="/get-involved" 
+                  className="transition-smooth hover:opacity-80"
+                  style={{ color: 'hsl(var(--gray-brown))' }}
+                >
                   Get Involved
                 </Link>
               </li>
@@ -92,25 +112,26 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+            <h3 className="font-semibold text-lg mb-4" style={{ color: 'hsl(var(--crimson))' }}>Contact Us</h3>
             <div className="space-y-2">
-              <p className="text-primary-foreground/80">
+              <p style={{ color: 'hsl(var(--gray-brown))' }}>
                 <a
                   href="mailto:hersheildnetwork@gmail.com"
-                  className="hover:text-primary-foreground transition-smooth"
+                  className="hover:opacity-80 transition-smooth"
+                  style={{ color: 'hsl(var(--gray-brown))' }}
                 >
                   hersheildnetwork@gmail.com
                 </a>
               </p>
-              <p className="text-primary-foreground/80">
+              <p style={{ color: 'hsl(var(--gray-brown))' }}>
                 Building stronger futures together
               </p>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/60">
+        <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid hsl(var(--gray-brown) / 0.3)' }}>
+          <p style={{ color: 'hsl(var(--gray-brown) / 0.7)' }}>
             © {new Date().getFullYear()} HerShield. All rights reserved. Built with ❤️ for women's empowerment.
           </p>
         </div>
