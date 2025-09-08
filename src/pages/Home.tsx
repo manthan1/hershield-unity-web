@@ -12,9 +12,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/lovable-uploads/5bb117a7-9552-418c-a2af-8f07a55ddd00.png')` }}
-        >
-          <div className="absolute inset-0 gradient-hero opacity-80"></div>
-        </div>
+        ></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 tracking-wide">
