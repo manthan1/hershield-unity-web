@@ -17,17 +17,16 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b shadow-soft" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm shadow-soft" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
               alt="HerShield Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
-            <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span>
           </Link>
 
           {/* Desktop Navigation */}

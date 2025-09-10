@@ -31,13 +31,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center mb-4">
               <img 
                 src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
                 alt="HerShield Logo" 
-                className="w-10 h-10 object-contain"
+                className="w-12 h-12 object-contain"
               />
-              <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span>
             </div>
             <p className="mb-4 max-w-md" style={{ color: 'hsl(var(--gray-brown))' }}>
               Elevating women through unity and support. A South Asian women-led initiative empowering women and giving back through quarterly charity partnerships.
