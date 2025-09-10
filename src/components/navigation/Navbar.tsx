@@ -25,7 +25,7 @@ export const Navbar = () => {
             <img 
               src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
               alt="HerShield Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
             {/* <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span> */}
           </Link>
