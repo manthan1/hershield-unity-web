@@ -25,7 +25,7 @@ export const Navbar = () => {
             <img 
               src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
               alt="HerShield Logo" 
-              className="w-15 h-15 object-contain"
+              className="w-13 h-13 object-contain"
             />
           </Link>
 
