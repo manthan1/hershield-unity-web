@@ -22,9 +22,11 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'hsl(var(--crimson))' }}>
-              <span className="font-bold text-xl" style={{ color: 'hsl(var(--light-orange))' }}>H</span>
-            </div>
+            <img 
+              src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
+              alt="HerShield Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span>
           </Link>
 
