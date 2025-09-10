@@ -27,7 +27,7 @@ export const Navbar = () => {
               alt="HerShield Logo" 
               className="w-10 h-10 object-contain"
             />
-            <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span>
+            {/* <span className="font-bold text-xl" style={{ color: 'hsl(var(--crimson))' }}>HerShield</span> */}
           </Link>
 
           {/* Desktop Navigation */}
