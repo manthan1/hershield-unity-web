@@ -10,7 +10,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#B5845E' }}>
+    <div className="flex min-h-screen items-center justify-center bg-background">
       <div className="text-center">
         <h1 className="mb-4 text-6xl font-bold gradient-primary bg-clip-text text-transparent">404</h1>
         <h2 className="mb-4 text-2xl font-semibold text-foreground">Page Not Found</h2>
