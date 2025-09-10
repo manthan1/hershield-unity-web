@@ -11,7 +11,7 @@ const Home = () => {
       <section className="relative min-h-[90vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('/lovable-uploads/5bb117a7-9552-418c-a2af-8f07a55ddd00.png')` }}
+          style={{ backgroundImage: `url('/lovable-uploads/56bf302c-99c6-4c8a-8716-c65491bec547.png')` }}
         ></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
