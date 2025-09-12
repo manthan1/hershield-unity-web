@@ -161,7 +161,8 @@ const GetInvolved = () => {
             Ready to Get Involved?
           </h2>
           <p className="text-lg text-primary-dark mb-8">
-            Have questions about volunteering, partnerships, or how you can contribute? We'd love to hear from you.
+            Have questions about volunteering, partnerships, or how you can contribute? <br/>
+            We'd love to hear from you.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
