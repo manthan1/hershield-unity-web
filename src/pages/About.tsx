@@ -184,7 +184,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--light-orange))' }}>
               Our Focus Areas
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto" style={{ color: 'hsl(var(--light-orange))>
               We concentrate our efforts on initiatives that create lasting impact for women in our communities.
             </p>
           </div>
