@@ -193,7 +193,7 @@ const About = () => {
             {focus.map((item, index) => (
               <Card key={index} className="shadow-medium hover:shadow-strong transition-smooth">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-3" style={{ color: 'hsl(var(--light-orange))' }}>
+                  <h3 className="text-xl font-semibold mb-3" style={{ color: 'hsl(var(--crimson))' }}>
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground text-lg">

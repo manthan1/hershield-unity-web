@@ -166,9 +166,11 @@ const GetInvolved = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
-              <Mail className="mr-2 h-5 w-5" />
-              Email Us
+            <Button variant="cta" size="lg" asChild>
+              <a href="mailto:hershieldnetwork@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Email Us
+              </a>
             </Button>
             {/* <Button variant="outline" size="lg">
               <Phone className="mr-2 h-5 w-5" />
