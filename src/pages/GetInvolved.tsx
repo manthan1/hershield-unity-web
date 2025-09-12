@@ -201,10 +201,10 @@ const GetInvolved = () => {
               <Mail className="mr-2 h-5 w-5" />
               Email Us
             </Button>
-            <Button variant="outline" size="lg">
+            {/* <Button variant="outline" size="lg">
               <Phone className="mr-2 h-5 w-5" />
               Schedule a Call
-            </Button>
+            </Button> */}
           </div>
           
           <p className="text-sm text-muted-foreground mt-6">
