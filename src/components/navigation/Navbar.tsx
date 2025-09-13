@@ -48,9 +48,6 @@ export const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="cta" size="sm">
-              Donate Now
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -83,11 +80,6 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <div className="px-3 py-2">
-                <Button variant="cta" size="sm" className="w-full">
-                  Donate Now
-                </Button>
-              </div>
             </div>
           </div>
         )}

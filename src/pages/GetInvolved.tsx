@@ -49,54 +49,6 @@ const GetInvolved = () => {
         </div>
       </section>
 
-      {/* Ways to Get Involved */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ways to Make a Difference
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Choose the involvement level that works for you. Every contribution matters and helps us build stronger communities.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {ways.map((way, index) => (
-              <Card key={index} className="shadow-medium hover:shadow-strong transition-smooth">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="gradient-secondary w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <way.icon className="h-6 w-6 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground mb-2">{way.title}</h3>
-                      <p className="text-muted-foreground">{way.description}</p>
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-foreground mb-3">What you'll gain:</h4>
-                    <ul className="space-y-1">
-                      {way.benefits.map((benefit, i) => (
-                        <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                          {benefit}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <Button variant="cta" className="w-full">
-                    {way.action}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
       {/* Partnership Information */}
