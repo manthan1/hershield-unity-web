@@ -6,22 +6,27 @@ import founderImage from "@/assets/founder-image.jpg";
 const Founder = () => {
   const milestones = [
     {
-      year: "2018",
+      year: "2009",
       title: "Arrived in Canada",
-      description: "Started a new life in Canada as a South Asian immigrant, facing the challenges of building community from scratch."
+      description: "Began a new chapter, navigating the initial challenges of building a life and community from scratch as an immigrant."
     },
     {
-      year: "2020",
-      title: "Found Her Voice",
-      description: "Began advocating for immigrant women's rights and discovered the power of community support."
+      year: "2018",
+      title: "Finding Her Footing",
+      description: "After years of perseverance, began to establish a strong sense of place and community in her new country."
     },
     {
       year: "2022",
-      title: "Founded HerShield",
-      description: "Launched HerShield to create the supportive space she wished she had during her own journey."
+      title: "Found Her Voice",
+      description: "Started advocating for the rights of immigrant women, discovering the incredible power of community and mutual support."
     },
     {
       year: "2024",
+      title: "Founded HerShield",
+      description: "Launched HerShield to create the safe, supportive, and empowering space she wished she'd had during her own journey."
+    },
+    {
+      year: "2025",
       title: "Growing Impact",
       description: "Expanded to serve over 500 women and raised $45,000 for women-centered causes."
     }

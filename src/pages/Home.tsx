@@ -22,7 +22,7 @@ const Home = () => {
             Elevating women through unity and support
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
-            HerShield is a South Asian women-led initiative by Shafoli, built to empower women and give back through quarterly charity partnerships. Every four months, we stand behind a new cause, raising awareness and resources to help women build stronger futures.
+            HerShield is an immigrant women-led initiative, built to empower women and give back through quarterly charity partnerships. Every four months, we stand behind a new cause, raising awareness and resources to help women build stronger futures.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
