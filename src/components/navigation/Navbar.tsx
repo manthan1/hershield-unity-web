@@ -7,6 +7,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Founder's Story", path: "/founder" },
+  { name: "Founding Members", path: "/founding-members" },
   { name: "Charity Spotlight", path: "/charity" },
   { name: "Get Involved", path: "/get-involved" },
   { name: "Contact", path: "/contact" },

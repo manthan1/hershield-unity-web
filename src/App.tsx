@@ -7,6 +7,7 @@ import { Layout } from "@/components/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Founder from "./pages/Founder";
+import FoundingMembers from "./pages/FoundingMembers";
 import Charity from "./pages/Charity";
 import GetInvolved from "./pages/GetInvolved";
 import Contact from "./pages/Contact";
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/founder" element={<Founder />} />
+            <Route path="/founding-members" element={<FoundingMembers />} />
             <Route path="/charity" element={<Charity />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/contact" element={<Contact />} />
