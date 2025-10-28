@@ -1,40 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Handshake, Heart, Calendar, ArrowRight, Mail, Phone } from "lucide-react";
-import ContactForm from "@/components/forms/ContactForm";
 
 const GetInvolved = () => {
-  const ways = [
-    {
-      icon: Users,
-      title: "Volunteer with Us",
-      description: "Join our team of passionate volunteers helping with events, outreach, and community programs.",
-      action: "Apply to Volunteer",
-      benefits: ["Flexible scheduling", "Skill-building opportunities", "Networking with like-minded women", "Making direct impact"]
-    },
-    {
-      icon: Handshake,
-      title: "Partner with Us", 
-      description: "Organizations and businesses can partner with HerShield to amplify our collective impact.",
-      action: "Explore Partnership",
-      benefits: ["Brand alignment with social impact", "Employee engagement opportunities", "Community visibility", "Tax benefits"]
-    },
-    {
-      icon: Calendar,
-      title: "Host an Event",
-      description: "Lead a workshop, networking event, or fundraiser within the HerShield community.",
-      action: "Propose an Event",
-      benefits: ["Platform for your expertise", "Community building", "Personal brand development", "Leadership experience"]
-    },
-    {
-      icon: Heart,
-      title: "Join Our Community",
-      description: "Become part of our supportive network of women committed to empowerment and growth.",
-      action: "Join Community",
-      benefits: ["Monthly networking events", "Mentorship opportunities", "Professional development", "Lifelong friendships"]
-    }
-  ];
-
   return (
     <div className="space-y-0">
       {/* Hero Section */}
@@ -46,6 +14,52 @@ const GetInvolved = () => {
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-4xl mx-auto">
             There are many ways to contribute to HerShield's mission of empowering women and creating lasting change in our communities.
           </p>
+        </div>
+      </section>
+
+      {/* Volunteer Signup Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Users className="w-16 h-16 mx-auto mb-6 text-primary" />
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Volunteer Signup Form
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Interested in becoming a volunteer? Join our movement and make an impact.
+          </p>
+          <Button variant="cta" size="lg" asChild>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdqiSthAshZJm3bAQcs1ob5y9y09S9up0G5RObB1C7qMQ40PQ/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign Up as a Volunteer
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
+      {/* Collaborate Section */}
+      <section className="py-20 bg-primary-lighter">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Handshake className="w-16 h-16 mx-auto mb-6 text-primary-darker" />
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-darker mb-4">
+            Host Events & Collaborate
+          </h2>
+          <p className="text-lg text-primary-dark mb-8">
+            Want to host an event or collaborate with HerShield? We'd love to partner with you.
+          </p>
+          <Button variant="cta" size="lg" asChild>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdE69H0zuJd688j8D34UQPcfb464zZOIoG7lvDjqYwHlzLW7A/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Collaborate with HerShield
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </div>
       </section>
 
