@@ -6,24 +6,31 @@ import { Calendar, Target, DollarSign, Heart, Users, CheckCircle, ArrowRight } f
 const Charity = () => {
   const pastPartners = [
     {
-      name: "Women's Crisis Centre",
+      name: "Humber River Hospital",
       period: "Q1 2024",
-      raised: "$15,000",
-      impact: "Provided emergency shelter for 45 women and children",
+      raised: "$11,000",
+      impact: "Supported critical care programs for women's health services",
       status: "Completed"
     },
     {
-      name: "Immigrant Women's Services",
+      name: "Run for the Cure – Canadian Cancer Foundation",
       period: "Q4 2023",
-      raised: "$12,500",
-      impact: "Funded job training programs for 60 women",
+      raised: "$3,045",
+      impact: "Contributed to breast cancer research and support programs",
       status: "Completed"
     },
     {
-      name: "Girls Education Fund",
+      name: "North York Harvest Food Bank",
       period: "Q3 2023",
-      raised: "$18,000",
-      impact: "Sponsored education for 30 girls in underserved communities",
+      raised: "$1,800",
+      impact: "Provided essential food support to families in need",
+      status: "Completed"
+    },
+    {
+      name: "North York Women's Shelter",
+      period: "Q2 2023",
+      raised: "$1,000",
+      impact: "Funded emergency shelter and safety programs for women",
       status: "Completed"
     }
   ];
@@ -264,7 +271,7 @@ const Charity = () => {
                 <DollarSign className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Total Impact</h3>
                 <div className="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                  $45,500
+                  $16,845
                 </div>
                 <p className="text-muted-foreground">
                   Raised for women-focused charities since our founding
