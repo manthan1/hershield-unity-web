@@ -111,6 +111,89 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Meet the Founder */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+              Meet the Founder — Shafoli Kapur
+            </h2>
+            <p className="text-xl text-muted-foreground italic">
+              A woman who turned her own journey into a movement.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="text-lg text-muted-foreground space-y-4">
+              <p>
+                For as long as she can remember, Shafoli Kapur has been driven by a deep desire to help people rebuild their lives. As the Founder and CEO of TDOT Immigration, she has spent over a decade guiding immigrants through one of the most defining transitions of their lives - starting over in a new country.
+              </p>
+              <p>
+                But somewhere along the way, Shafoli realized that even the strongest women often do this in silence. They build, nurture, and hold everything together - yet rarely have a space where they themselves feel supported, seen, or celebrated.
+              </p>
+              <p>
+                HerShield was born from that realization - and from her own experience as an immigrant woman balancing leadership, family, and identity.
+              </p>
+            </div>
+
+            <Card className="shadow-strong" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
+              <CardContent className="p-8">
+                <blockquote className="text-xl italic text-center" style={{ color: 'hsl(var(--crimson))' }}>
+                  "I built HerShield because I wanted to create the space I once needed - a place where women feel empowered, supported, and celebrated. Every woman deserves to know that she is not alone in her journey."
+                </blockquote>
+              </CardContent>
+            </Card>
+
+            <div className="text-lg text-muted-foreground space-y-4">
+              <p>
+                Through HerShield, Shafoli envisions a community where women not only give back through charitable causes, but also find the resources, mentorship, and sisterhood they need to move ahead in their own journeys - personally and professionally.
+              </p>
+              <p>
+                Her leadership is guided by empathy, authenticity, and a quiet strength that comes from lived experience. To her, success means more than achievement - it means alignment.
+              </p>
+              <p>
+                And HerShield is her way of sharing that truth with every woman who's still finding her footing - a reminder that you don't have to do it alone.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              <Card className="shadow-medium">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+                    Her Vision
+                  </h3>
+                  <p className="text-muted-foreground">
+                    She envisions a world where women rise together - not in competition, but in connection. A world where every woman, especially the immigrant woman, feels seen, supported, and celebrated for her journey. Her vision is a future built on compassion, courage, and collective strength - where giving back becomes a way of life.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-medium">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+                    Her Leadership
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Her leadership is rooted in empathy, not ego. She leads by listening, by lifting others, and by turning her own healing into hope for others. Through authenticity and purpose, she reminds us that true power lies in presence - and that leadership is strongest when shared.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-medium">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+                    Her Impact
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Her impact is measured not just in numbers, but in stories - of women finding belonging, opportunity, and confidence to move forward. Every partnership, every initiative, every act of giving creates ripples of change that extend far beyond the moment. Together, we're building a legacy of unity - one woman, one cause, one act of courage at a time.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
