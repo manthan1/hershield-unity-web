@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import shafoliKapurImage from "@/assets/shafoli-kapur.jpg";
+import rashimKatyalImage from "@/assets/rashim-katyal.jpg";
 
 const FoundingMembers = () => {
   const members = [
@@ -23,6 +24,7 @@ const FoundingMembers = () => {
     {
       name: "Rashim Katyal",
       title: "Founding Board Member | Style Confidence & Empowerment Coach | Workforce Development Advocate",
+      image: rashimKatyalImage,
       bio: [
         "Rashim Katyal is a passionate advocate for workforce development and women's empowerment, driven by the belief that confidence is the key to unlocking both professional and personal success.",
         "With a strong background in designing and leading innovative programs, Rashim has played a pivotal role in shaping inclusive pathways that connect diverse talent pools with meaningful opportunities in the Canadian workforce. Her work focuses on building organizational capacity, bridging the gap between education and employment, and creating equitable access for underrepresented groups.",
