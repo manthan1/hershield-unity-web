@@ -16,13 +16,19 @@ const Home = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 tracking-wide">
-            HERSHIELD
+            HerShield Network Foundation
           </h1>
           <h2 className="text-2xl md:text-3xl text-primary-foreground/90 mb-4 font-light">
-            Elevating women through unity and support
+            Elevating Women Through Unity and Purpose
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
-            HerShield is an immigrant women-led initiative, built to empower women and give back through quarterly charity partnerships. Every four months, we stand behind a new cause, raising awareness and resources to help women build stronger futures.
+            HerShield is an immigrant women-led movement rooted in compassion, courage, and collective power. We exist to create a ripple effect of empowerment — connecting women who rise, heal, and give back together.
+          </p>
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Every four months, we unite behind a new cause through our Quarterly Impact Partnerships — amplifying voices, raising awareness, and mobilizing resources to build stronger, more equitable futures for women and communities in need.
+          </p>
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
+            At HerShield, we believe that when women come together, change becomes inevitable. We are not just building support — we're building legacy, leadership, and sisterhood.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -77,17 +83,17 @@ const Home = () => {
                     <Calendar className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>CoHere Networking</h3>
-                    <p className="text-sm text-muted-foreground">March 15, 2024</p>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished by HerShield</h3>
+                    <p className="text-sm text-muted-foreground">November 2025</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Connect with like-minded women in an empowering networking environment designed for growth and collaboration.
+                  Join us for an exclusive evening of empowerment, connection, and celebration as we unite women leaders and changemakers.
                 </p>
                 <Button 
                   variant="cta" 
                   className="w-full"
-                  onClick={() => window.open('https://www.eventbrite.com/e/cohere-networking-tickets', '_blank')}
+                  onClick={() => window.open('/get-involved', '_self')}
                 >
                   Book a Seat
                 </Button>
@@ -101,12 +107,12 @@ const Home = () => {
                     <Users className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Leadership Workshop</h3>
-                    <p className="text-sm text-muted-foreground">April 8, 2024</p>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished Networking</h3>
+                    <p className="text-sm text-muted-foreground">November 2025</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Develop leadership skills and confidence through interactive workshops led by successful women leaders.
+                  Connect with inspiring women, build meaningful relationships, and expand your network at our signature event.
                 </p>
                 <Button 
                   variant="cta" 
@@ -125,12 +131,12 @@ const Home = () => {
                     <Heart className="h-6 w-6 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Community Fundraiser</h3>
-                    <p className="text-sm text-muted-foreground">May 20, 2024</p>
+                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished Impact Gala</h3>
+                    <p className="text-sm text-muted-foreground">November 2025</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Join our quarterly fundraising event supporting women's shelters and empowerment programs.
+                  Experience an unforgettable night supporting our quarterly cause, featuring inspiring stories and community impact.
                 </p>
                 <Button 
                   variant="cta" 
