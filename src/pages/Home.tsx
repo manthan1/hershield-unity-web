@@ -84,7 +84,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished by HerShield</h3>
-                    <p className="text-sm text-muted-foreground">November 2025</p>
+                    <p className="text-sm text-muted-foreground">November 23, 2025</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
@@ -93,7 +93,7 @@ const Home = () => {
                 <Button 
                   variant="cta" 
                   className="w-full"
-                  onClick={() => window.open('/get-involved', '_self')}
+                  onClick={() => window.open('https://polishedbyhershield.eventbrite.com', '_blank')}
                 >
                   Book a Seat
                 </Button>
