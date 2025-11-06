@@ -8,26 +8,26 @@ const Home = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[100vh] md:min-h-[90vh] flex items-center py-20 md:py-0">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/lovable-uploads/56bf302c-99c6-4c8a-8716-c65491bec547.png')` }}
         ></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 tracking-wide">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 md:mb-6 tracking-wide leading-tight">
             HerShield Network Foundation
           </h1>
-          <h2 className="text-2xl md:text-3xl text-primary-foreground/90 mb-4 font-light">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-primary-foreground/90 mb-4 md:mb-6 font-light">
             Elevating Women Through Unity and Purpose
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed px-4">
             HerShield is an immigrant women-led movement rooted in compassion, courage, and collective power. We exist to create a ripple effect of empowerment — connecting women who rise, heal, and give back together.
           </p>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-4 md:mb-6 max-w-4xl mx-auto leading-relaxed px-4">
             Every four months, we unite behind a new cause through our Quarterly Impact Partnerships — amplifying voices, raising awareness, and mobilizing resources to build stronger, more equitable futures for women and communities in need.
           </p>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
             At HerShield, we believe that when women come together, change becomes inevitable. We are not just building support — we're building legacy, leadership, and sisterhood.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,25 +52,25 @@ const Home = () => {
       </section>
 
       {/* Founder's Quote */}
-      <section className="py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="text-2xl md:text-3xl font-medium italic mb-6" style={{ color: 'hsl(var(--crimson))' }}>
+      <section className="py-12 md:py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl font-medium italic mb-4 md:mb-6 leading-relaxed" style={{ color: 'hsl(var(--crimson))' }}>
             "HerShield is my promise to every woman: you are not alone. Together, we are stronger, braver, and unstoppable."
           </blockquote>
-          <cite className="text-lg font-semibold" style={{ color: 'hsl(var(--gray-brown))' }}>
+          <cite className="text-base md:text-lg font-semibold" style={{ color: 'hsl(var(--gray-brown))' }}>
             — Shafoli Kapur, Founder
           </cite>
         </div>
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+      <section className="py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Upcoming Events
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               Join us for meaningful events that bring women together to connect, learn, and grow.
             </p>
           </div>
@@ -152,8 +152,8 @@ const Home = () => {
       </section>
 
       {/* Featured Cause */}
-      <section className="py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 md:py-20" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: 'hsl(var(--crimson))' }}>
@@ -206,13 +206,13 @@ const Home = () => {
       </section>
 
       {/* Community Gallery */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'hsl(var(--crimson))' }}>
+      <section className="py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4" style={{ color: 'hsl(var(--crimson))' }}>
               Our Community in Action
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               See the power of women supporting women through our events, workshops, and community initiatives.
             </p>
           </div>
