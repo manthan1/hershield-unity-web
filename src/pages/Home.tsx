@@ -75,8 +75,8 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="shadow-medium hover:shadow-strong transition-smooth">
+          <div className="flex justify-center">
+            <Card className="shadow-medium hover:shadow-strong transition-smooth max-w-md w-full">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="gradient-secondary w-12 h-12 rounded-lg flex items-center justify-center">
@@ -96,54 +96,6 @@ const Home = () => {
                   onClick={() => window.open('https://polishedbyhershield.eventbrite.com', '_blank')}
                 >
                   Book a Seat
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-medium hover:shadow-strong transition-smooth">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="gradient-secondary w-12 h-12 rounded-lg flex items-center justify-center">
-                    <Users className="h-6 w-6 text-secondary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished Networking</h3>
-                    <p className="text-sm text-muted-foreground">November 2025</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Connect with inspiring women, build meaningful relationships, and expand your network at our signature event.
-                </p>
-                <Button 
-                  variant="cta" 
-                  className="w-full"
-                  onClick={() => window.open('/get-involved', '_self')}
-                >
-                  Reserve Spot
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-medium hover:shadow-strong transition-smooth">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="gradient-secondary w-12 h-12 rounded-lg flex items-center justify-center">
-                    <Heart className="h-6 w-6 text-secondary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg" style={{ color: 'hsl(var(--crimson))' }}>Polished Impact Gala</h3>
-                    <p className="text-sm text-muted-foreground">November 2025</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Experience an unforgettable night supporting our quarterly cause, featuring inspiring stories and community impact.
-                </p>
-                <Button 
-                  variant="cta" 
-                  className="w-full"
-                  onClick={() => window.open('/charity', '_self')}
-                >
-                  Get Tickets
                 </Button>
               </CardContent>
             </Card>
