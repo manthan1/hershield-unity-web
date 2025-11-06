@@ -20,9 +20,9 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm shadow-soft" style={{ backgroundColor: 'hsl(var(--light-orange))' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center h-20">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center absolute left-4">
+          <Link to="/" className="flex items-center flex-shrink-0">
             <img 
               src="/lovable-uploads/888c2ae8-3f0b-4d70-8b82-84eb003f8973.png" 
               alt="HerShield Logo" 
@@ -31,7 +31,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -50,6 +50,9 @@ export const Navbar = () => {
               </Link>
             ))}
           </div>
+          
+          {/* Spacer for balance on desktop */}
+          <div className="hidden md:block w-16"></div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
