@@ -2,8 +2,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Quote, Heart, Star, ArrowRight } from "lucide-react";
 import founderImage from "@/assets/shafoli-kapur.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Founder = () => {
+  const navigate = useNavigate();
+  
   const milestones = [
     {
       year: "2009",
@@ -188,10 +191,10 @@ const Founder = () => {
             strength, and sisterhood that transforms lives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" onClick={() => navigate('/get-involved')}>
               Get Involved Today
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => navigate('/founding-members')}>
               Connect with Shafoli
             </Button>
           </div>
