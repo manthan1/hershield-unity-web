@@ -6,6 +6,7 @@ import moment5 from "@/assets/moment-5.jpg";
 import moment6 from "@/assets/moment-6.jpg";
 import moment7 from "@/assets/moment-7.jpg";
 import moment8 from "@/assets/moment-8.jpg";
+import moment9 from "@/assets/moment-9.jpg";
 
 const moments = [
   { id: 1, src: moment1, alt: "Women celebrating community achievements together" },
@@ -16,6 +17,7 @@ const moments = [
   { id: 6, src: moment6, alt: "Empowerment through community gatherings" },
   { id: 7, src: moment7, alt: "Inspiring conversations and mentorship" },
   { id: 8, src: moment8, alt: "Women supporting women in community" },
+  { id: 9, src: moment9, alt: "Empowering women through shared experiences" },
 ];
 
 const Moments = () => {
@@ -36,23 +38,21 @@ const Moments = () => {
         {/* Gallery Grid */}
         <section className="pb-20 px-4">
           <div className="container mx-auto max-w-7xl">
-            <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {moments.map((moment, index) => (
                 <div
                   key={moment.id}
-                  className="break-inside-avoid group animate-fade-in"
+                  className="group animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="relative overflow-hidden rounded-2xl bg-card shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={moment.src}
-                        alt={moment.alt}
-                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    </div>
+                  <div className="relative overflow-hidden rounded-2xl bg-card shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2 aspect-square">
+                    <img
+                      src={moment.src}
+                      alt={moment.alt}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                 </div>
               ))}
