@@ -160,10 +160,10 @@ const Charity = () => {
                     </div>
                   </div>
 
-                  <Button variant="cta" size="lg" className="w-full mt-6">
+                  {/* <Button variant="cta" size="lg" className="w-full mt-6">
                     Donate Now
                     <Heart className="ml-2 h-5 w-5" />
-                  </Button>
+                  </Button> */}
 
                   <p className="text-xs text-muted-foreground mt-3">100% goes directly to the charity</p>
                 </div>
