@@ -45,7 +45,7 @@ const Moments = () => {
                   className="group animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className={`relative overflow-hidden rounded-2xl bg-card shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2 ${moment.id === 8 ? 'aspect-square' : 'aspect-[3/4]'}`}>
+                  <div className="relative overflow-hidden rounded-2xl bg-card shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-2 aspect-square">
                     <img
                       src={moment.src}
                       alt={moment.alt}
