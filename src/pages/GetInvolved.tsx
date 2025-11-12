@@ -8,11 +8,10 @@ const GetInvolved = () => {
       {/* Hero Section */}
       <section className="py-20 gradient-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Be Part of the Movement
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">Be Part of the Movement</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-4xl mx-auto">
-            There are many ways to contribute to HerShield's mission of empowering women and creating lasting change in our communities.
+            There are many ways to contribute to HerShield's mission of empowering women and creating lasting change in
+            our communities.
           </p>
         </div>
       </section>
@@ -21,14 +20,12 @@ const GetInvolved = () => {
       <section className="py-20 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Users className="w-16 h-16 mx-auto mb-6 text-primary" />
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Volunteer Signup Form
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Volunteer Signup Form</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Interested in becoming a volunteer? Join our movement and make an impact.
           </p>
           <Button variant="cta" size="lg" asChild>
-            <a 
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdqiSthAshZJm3bAQcs1ob5y9y09S9up0G5RObB1C7qMQ40PQ/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,14 +41,12 @@ const GetInvolved = () => {
       <section className="py-20 bg-primary-lighter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Handshake className="w-16 h-16 mx-auto mb-6 text-primary-darker" />
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-darker mb-4">
-            Host Events & Collaborate
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-darker mb-4">Host Events & Collaborate</h2>
           <p className="text-lg text-primary-dark mb-8">
             Want to host an event or collaborate with HerShield? We'd love to partner with you.
           </p>
           <Button variant="cta" size="lg" asChild>
-            <a 
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdE69H0zuJd688j8D34UQPcfb464zZOIoG7lvDjqYwHlzLW7A/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,8 +58,6 @@ const GetInvolved = () => {
         </div>
       </section>
 
-
-
       {/* Partnership Information */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +66,8 @@ const GetInvolved = () => {
               Corporate & Organizational Partnerships
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Partner with HerShield to amplify your organization's impact on women's empowerment and community development.
+              Partner with HerShield to amplify your organization's impact on women's empowerment and community
+              development.
             </p>
           </div>
 
@@ -87,7 +81,7 @@ const GetInvolved = () => {
                   <li>• Networking with community leaders</li>
                   <li>• Social media recognition</li>
                 </ul>
-                <Button variant="outline" className="w-full">Learn More</Button>
+                {/* <Button variant="outline" className="w-full">Learn More</Button> */}
               </CardContent>
             </Card>
 
@@ -100,7 +94,7 @@ const GetInvolved = () => {
                   <li>• Corporate social responsibility</li>
                   <li>• Employee mentorship programs</li>
                 </ul>
-                <Button variant="outline" className="w-full">Get Started</Button>
+                {/* <Button variant="outline" className="w-full">Get Started</Button> */}
               </CardContent>
             </Card>
 
@@ -113,7 +107,7 @@ const GetInvolved = () => {
                   <li>• Resource sharing</li>
                   <li>• Community impact measurement</li>
                 </ul>
-                <Button variant="outline" className="w-full">Discuss Options</Button>
+                {/* <Button variant="outline" className="w-full">Discuss Options</Button> */}
               </CardContent>
             </Card>
           </div>
@@ -123,14 +117,12 @@ const GetInvolved = () => {
       {/* Contact Section */}
       <section className="py-20 bg-primary-lighter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-darker mb-6">
-            Ready to Get Involved?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-darker mb-6">Ready to Get Involved?</h2>
           <p className="text-lg text-primary-dark mb-8">
-            Have questions about volunteering, partnerships, or how you can contribute? <br/>
+            Have questions about volunteering, partnerships, or how you can contribute? <br />
             We'd love to hear from you.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="lg" asChild>
               <a href="mailto:hershieldnetwork@gmail.com">
@@ -143,10 +135,8 @@ const GetInvolved = () => {
               Schedule a Call
             </Button> */}
           </div>
-          
-          <p className="text-sm text-primary-dark mt-6">
-            Response time: We typically respond within 24 hours
-          </p>
+
+          <p className="text-sm text-primary-dark mt-6">Response time: We typically respond within 24 hours</p>
         </div>
       </section>
     </div>
