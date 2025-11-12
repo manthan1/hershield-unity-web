@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Heart, Users, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-hands.jpg";
-import communityGallery from "@/assets/community-gallery.jpg";
+import communityCollage from "@/assets/community-collage-banner.jpg";
 
 const Home = () => {
   return (
@@ -183,8 +183,8 @@ const Home = () => {
 
           <div className="relative rounded-2xl overflow-hidden shadow-strong">
             <img
-              src={communityGallery}
-              alt="HerShield community members at various events and workshops"
+              src={communityCollage}
+              alt="HerShield community members networking and connecting at empowerment events"
               className="w-full h-96 object-cover"
             />
             <div className="absolute inset-0 gradient-primary opacity-20"></div>
