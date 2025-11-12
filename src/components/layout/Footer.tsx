@@ -4,24 +4,9 @@ import { Button } from "@/components/ui/button";
 export const Footer = () => {
   const socialLinks = [
     {
-      name: "TikTok",
-      url: "https://www.tiktok.com/@hershieldnetwork",
-      icon: "🎵",
-    },
-    {
       name: "Instagram",
       url: "https://www.instagram.com/hershieldnetwork/",
       icon: "📷",
-    },
-    {
-      name: "YouTube",
-      url: "https://www.youtube.com/channel/UCYIzdkK93fFXehLkLniFN1A",
-      icon: "📹",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/company/108386213/admin/dashboard/",
-      icon: "💼",
     },
   ];
 
