@@ -52,6 +52,8 @@ const Moments = () => {
                       className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${
                         moment.id === 8 
                           ? 'object-cover' 
+                          : moment.id <= 3
+                          ? 'rotate-90 object-contain'
                           : '-rotate-90 object-contain'
                       }`}
                       loading="lazy"
