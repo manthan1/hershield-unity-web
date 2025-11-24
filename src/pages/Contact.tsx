@@ -71,11 +71,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20" style={{ backgroundColor: "#c2aa9b" }}>
+      {/* <section className="py-20" style={{ backgroundColor: "#c2aa9b" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm title="Send us a Message" type="contact" />
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20" style={{ backgroundColor: "#792836" }}>
